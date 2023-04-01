@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.RegisterController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="254.0" fitWidth="200.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Downloads/healthcare.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="9.0" layoutY="274.0" prefHeight="24.0" prefWidth="183.0" text="           Gul-Ahmed Industries" />
+            <Label layoutX="39.0" layoutY="307.0" prefHeight="17.0" prefWidth="134.0" text="gul.ahmed@gmail.com" />
+            <Label layoutX="39.0" layoutY="333.0" prefHeight="17.0" prefWidth="133.0" text="UAN-051-111-000-222" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="26.0" layoutY="123.0" prefHeight="52.0" prefWidth="127.0" text="Add Patient">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="239.0">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="99.0" layoutY="28.0" text="Manage Patient">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="regButton" layoutX="262.0" layoutY="281.0" mnemonicParsing="false" onAction="#Register" prefHeight="13.0" prefWidth="85.0" style="-fx-background-color: #000000;" text="View" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Label fx:id="info" layoutX="52.0" layoutY="84.0" prefHeight="39.0" prefWidth="249.0" textFill="#fc0606">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="81.0" layoutY="84.0" prefHeight="29.0" prefWidth="181.0">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="199.0" prefHeight="53.0" prefWidth="164.0" text="Delete Patient">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="274.0" prefHeight="52.0" prefWidth="142.0" text="View Patients">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button layoutX="262.0" layoutY="137.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="Add">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="262.0" layoutY="207.0" mnemonicParsing="false" text="Delete">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
